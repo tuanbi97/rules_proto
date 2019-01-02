@@ -13,7 +13,6 @@ def python_grpc_compile(**kwargs):
     python_proto_compile(**kwargs)
     com_github_grpc_grpc(**kwargs)
     io_bazel_rules_python(**kwargs)
-    six(**kwargs)
 
 def python_proto_library(**kwargs):
     python_proto_compile(**kwargs)
