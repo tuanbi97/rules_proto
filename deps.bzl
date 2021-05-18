@@ -12,7 +12,7 @@ def github_archive(name, org, repo, ref, sha256):
                 "https://mirror.bazel.build/github.com/%s/%s/archive/%s.tar.gz" % (org, repo, ref),
                 "https://github.com/%s/%s/archive/%s.tar.gz" % (org, repo, ref),
             ],
-            sha256 = sha256,
+            #sha256 = sha256,
         )
     else:
         print("Skipping predefined dependency: '%s'" % name)
@@ -275,7 +275,7 @@ def io_grpc_grpc_java(**kwargs):
     """grpc java plugin and jars
     """
     name = "io_grpc_grpc_java"
-    ref = get_ref(name, "3134daf471f90b8f00c037518fc64988a1cdc8f7", kwargs)  # v1.15.0
+    ref = get_ref(name, "d897fa049e995e62130387a19bbe5667469cef27", kwargs)  # v1.15.0
     sha256 = get_sha256(name, "a7d7def13fd019255ba6ef7499aa91dac38d0ec0f5d9c1262a75ae82f4d67174", kwargs)
     github_archive(name, "grpc", "grpc-java", ref, sha256)
 
