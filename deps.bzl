@@ -275,7 +275,7 @@ def io_grpc_grpc_java(**kwargs):
     """grpc java plugin and jars
     """
     name = "io_grpc_grpc_java"
-    ref = get_ref(name, "7b28e33b3b9ee7d05244efb888c758ee8abd3743", kwargs)  # v1.15.0
+    ref = get_ref(name, "bc1c08c5bc8483a107ff437bd04e7af1319fc7a8", kwargs)  # v1.18.0
     sha256 = get_sha256(name, "a7d7def13fd019255ba6ef7499aa91dac38d0ec0f5d9c1262a75ae82f4d67174", kwargs)
     github_archive(name, "grpc", "grpc-java", ref, sha256)
 
